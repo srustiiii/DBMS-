@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% block title %}
+HOME
+{% endblock title %}
+
+{% block body %}
+{% with messages=get_flashed_messages(with_categories=true) %}
+{% if messages %}
+{% for category, message in messages %}
+
+<div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
+    {{message}}
+
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
+  {% endfor %}
+  {% endif %}
+  {% endwith %}
+  
+    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="static/images/home3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>WELCOME TO HOSPITAL MANAGEMENT SYSTEM</h5>
+                <p>A Hospital is no place to be sick.</p>
+              </div>
+        </div>
+          <div class="carousel-item">
+            <img src="static/images/home.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>WELCOME TO HOSPITAL MANAGEMENT SYSTEM</h5>
+                <p>A Hospital is no place to be sick.</p>
+              </div>
+        </div>
+          <div class="carousel-item">
+            <img src="static/images/home2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>WELCOME TO HOSPITAL MANAGEMENT SYSTEM</h5>
+                <p>A Hospital is no place to be sick.</p>
+              </div>
+        </div>
+          <div class="carousel-item">
+            <img src="static/images/home5.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>WELCOME TO HOSPITAL MANAGEMENT SYSTEM</h5>
+                <p>A Hospital is no place to be sick.</p>
+              </div>
+        </div>
+          
+          <div class="carousel-item">
+            <img src="static/images/home1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>WELCOME TO HOSPITAL MANAGEMENT SYSTEM</h5>
+                <p>A Hospital is no place to be sick.</p>
+              </div>  
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <section class="bg-dark py-3 py-md-5">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            
+
+       
+        <h3 class="mb-4 display-5 text-center"style="color:white;">Now take the appointment by sitting at home!</h3><br>
+        <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+        </div>
+      </div>
+    </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="/static/images/docicon.jpg" class="img-responsive" style="width:100%"  alt="Image">
+            <h4 class="mb-4 display-5 text-center"style="color:white;">Doctor Registration</h4>
+          </div>
+          <div class="col-sm-4"> 
+            <img src="/static/images/patienticon.jpg" class="img-responsive" style="width:100%" alt="Image">
+            <h4 class="mb-4 display-5 text-center"style="color:white;">Patient Registration</h4> 
+              
+          </div>
+          <div class="col-sm-4"> 
+            <img src="/static/images/appointment.jpg" class="img-responsive" style="width:100%"  alt="Image">
+            <h4 class="mb-4 display-5 text-center"style="color:white;">Schedule Appointments</h4>
+          </div>
+          
+            
+          </div>
+        </div>
+      </div><br></section>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      
+      <h2 >Testimonials</h2>
+      <section class="bg-dark py-3 py-md-5">
+       
+      
+      <div class="container1">
+        <img src="/static/images/doctortesto1.jpg" alt="Avatar" style="width:90px">
+        <p><span>Dr. Roopesh Malhakar</span> MD / CMO / Director </p>
+        <p>The software is running smoothly since the date of its inception. 
+          This software suites all out requirements and is suitable for the healthcare segment.
+          All the modifications requested by us so far have been done by the said company and their prompt and timely services has helped us a lot for the smooth running of our network system.</p>
+      </div>
+      
+      <div class="container1">
+        <img src="/static/images/doctortesto2.jpg" alt="Avatar" style="width:90px">
+        <p><span>Dr. K.M. Amrita</span> Dean </p>
+        <p>This is to certify that we have been using the comprehensive Hospital Information System "MEDIWARE" supplied by Datamate Infosolutions P. Ltd., Kakkanad, Cochin. 
+          The software is running smoothly since the date of inception and suites for our requirements.
+          The prompt service of Datamate has helped us a lot in smooth running of our software. 
+          We find Mediware HIS,a product from Datamate Infosolutions P. Ltd., user friendly, informative and considered to be the pioneer in introducing innovative concepts and technology lo the Health Care domain.</p>
+      </div>
+    </section>
+      </body>
+      </html>
+      
+      {%endblock body%}
